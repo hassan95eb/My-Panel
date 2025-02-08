@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router";
 import Todo from "./Pages/Todo";
-import Clock from "./Pages/Clock";
+import { Clock, TimeLapse, FocusTime, CountdownTimer } from "./Pages/Clock";
 import Game from "./Pages/Game";
 import Weather from "./Pages/Weather";
 
@@ -13,6 +13,9 @@ const MainContent = () => {
         <Route path="/clock" element={<Clock />} />
         <Route path="/game" element={<Game />} />
         <Route path="/weather" element={<Weather />} />
+        <Route path="/time-lapse" element={<TimeLapse />} />
+        <Route path="/focus-time" element={<FocusTime />} />
+        <Route path="/countdown" element={<CountdownTimer />} />
       </Routes>
     </div>
   );

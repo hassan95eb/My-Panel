@@ -1,4 +1,8 @@
 import { Link } from "react-router";
+import ChecklistIcon from "@mui/icons-material/CheckList";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import CloudIcon from "@mui/icons-material/Cloud";
 
 const Sidebar = () => {
   return (
@@ -22,7 +26,7 @@ const Sidebar = () => {
               to="/todo"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-700 transition-colors"
             >
-              <span className="material-icons-outlined">checklist</span>
+              <ChecklistIcon className="text-gray-400" />
               Todo
             </Link>
           </li>
@@ -31,7 +35,7 @@ const Sidebar = () => {
               to="/clock"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-700 transition-colors"
             >
-              <span className="material-icons-outlined">schedule</span>
+              <AccessTimeIcon className="text-gray-400" />
               Clock
             </Link>
           </li>
@@ -40,7 +44,7 @@ const Sidebar = () => {
               to="/game"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-700 transition-colors"
             >
-              <span className="material-icons-outlined">sports_esports</span>
+              <SportsEsportsIcon className="text-gray-400" />
               Game
             </Link>
           </li>
@@ -49,7 +53,7 @@ const Sidebar = () => {
               to="/weather"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-700 transition-colors"
             >
-              <span className="material-icons-outlined">cloud</span>
+              <CloudIcon className="text-gray-400" />
               Weather
             </Link>
           </li>
